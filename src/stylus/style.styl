@@ -1,0 +1,97 @@
+/*
+Theme Name: base
+Template Theme URI: https://www.edgarcornejo.com/
+Author: Edgar Cornejo
+Description: theme base
+Version: 1.2 
+*/
+@import "reset.styl"
+
+:root
+  font-size 16px
+  --eCeleste hsl(195,77%,57%)
+  --eAzul hsl(255,77%,57%)
+  --AHTorange hsl(38,100%,50%)
+  --eDark hsl(236, 77%, 14%)
+
+  --input-color #99A3BA
+  --input-border #CDD9ED
+  --input-background #fff
+  --input-placeholder #CBD1DC
+
+  --input-border-focus #275EFE
+
+  --group-color var(--input-color)
+  --group-border var(--input-border)
+  --group-background #EEF4FF
+
+  --group-color-focus #fff
+  --group-border-focus var(--input-border-focus)
+  --group-background-focus #678EFE
+
+/*Inicio*/
+body
+  margin 0 auto
+  display flex
+  #main-aside
+    width 18%
+    background url("http://localhost:8848/wordpress/wp-content/themes/base/static/img/side-bar.png") var(--AHTorange)
+    padding-top 1rem
+    min-width 280px
+    hgroup
+      width 90%
+      margin 0 auto
+      text-align center
+      h1
+        font-size 3rem
+        color transparent
+        font-size 0
+      h2
+        font-size 1.5rem
+    nav
+      width 90%
+      margin 1rem auto
+      border-top 1px solid var(--eDark)
+      border-bottom 1px solid var(--eDark)
+      ul
+        padding-bottom 0.5rem
+        padding-top 0.5rem
+        li
+          height 2rem
+        a
+          color var(--eDark)
+          font-size 1.2rem
+          &:hover
+            color #FFF
+
+#logo-aht
+  width 70%
+
+#contacto
+  display block
+  width 90%
+  margin 1rem auto
+
+/*Contenido*/
+#wrapper
+  margin 0 auto
+  width 82%
+  #main-content
+    margin 2rem auto
+    width 70%
+    h1 
+      font-size 2rem
+    p 
+      padding-top 2rem
+
+/*Footer*/
+footer
+  text-align center
+
+
+/*Responsive Design
+@media screen and (max-width:1366px)
+
+@media screen and (max-width:768px)
+
+@media screen and (max-width:620px)*/
