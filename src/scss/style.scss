@@ -1,0 +1,119 @@
+/*
+Theme Name: Base
+Template Theme URI: https://www.edgarcornejo.com/
+Author: Edgar Cornejo
+Description: Theme base para WordPress
+Version: 1.1
+*/
+@import "reset", "fonts";
+
+/* Colores */
+$white: #F2F2F2;
+$black: #090b14;
+
+/* espacio */
+$espacio: clamp(8px, .5vw, .5vw);
+$espacio1: clamp(16px, 1vw, 1vw);
+$espacio2: clamp(32px, 2vw, 2vw);
+$espacio3: clamp(48px, 4vw, 4vw);
+
+/* Borders y redondeado */
+$borde-delgado: clamp(1px, .2vw, .2vw);
+$borde-grueso: clamp(3px, .4vw, .4vw);
+$redondeado: clamp(4px, .4vw, .4vw);
+
+/* Sombras */
+$sombra: 0 0 10px rgba(0, 0, 0, 0.1);
+$sombra-hover: 0 0 20px rgba(0, 0, 0, 0.2);
+
+/* Scrollbar */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: $black $white;
+}
+
+/* Selection */
+::selection {
+  color: $white;
+  background: $black;
+}
+
+/* Global */
+body {
+  font-size: clamp(16px, 1vw, 1vw);
+  color: $black;
+  background-color: $white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: $espacio1;
+}
+
+h4, h5, h6 {
+  font-weight: 500;
+}
+
+#main-header {
+  display: flex;
+  gap: $espacio1;
+  margin-bottom: $espacio2;
+  section {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+#logo {
+  padding: $espacio;
+  display: inline-block;
+  img {
+    height: auto;
+    width: 80px;
+    min-width: 48px;
+  }
+}
+
+#main-titles {
+  text-align: center;
+}
+
+#main-nav {
+  width: 100%;
+  ul {
+    display: flex;
+  }
+  a {
+    color: $black;
+    padding: $espacio;
+    font-weight: 500;
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+#main-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  p {
+    margin-bottom: $espacio1;
+    max-width: 900px;
+    font-weight: 300;
+  }
+}
+
+#main-footer {
+  padding: $espacio1 0 $espacio1 0;
+  text-align: center;
+  letter-spacing: 1pt;
+  font-weight: 700;
+}
+
+@import "media-queries";

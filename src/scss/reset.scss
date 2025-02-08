@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+menu,li,ol {
+  list-style: none;
+}
+
+a {
+  transition: all .4s ease-in-out;
+  text-decoration: none;
+}
+
+img,video,svg {
+  max-width: 100%;
+  height: auto;
+}
