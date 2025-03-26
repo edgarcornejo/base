@@ -1,6 +1,5 @@
-#VSCode
+# VSCode
 .vscode/*
 
-#Prepros
-#.prepros.config
-
+# Prepros
+prepros.config

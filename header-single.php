@@ -2,13 +2,15 @@
 <html lang="<?php bloginfo('language'); ?>">
   <head>
     <meta charset="<?php bloginfo('charset'); ?>">
+    <meta http-equiv="Cache-Control" content="no-store" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/static/img/favicon.svg">
 
     <title><?php the_title(); ?> - <?php bloginfo('name'); ?></title>
     
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
-    <?php //wp_head(); ?>
+    <?php wp_head(); ?>
 
     <meta name="distribution" content="global"/>
     <meta name="author" content="Edgar Cornejo" />
