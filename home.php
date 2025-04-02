@@ -33,5 +33,3 @@
   
   <!-- Archivo de pié global de Wordpress -->
   <?php get_footer(); ?>
-  
-  
